@@ -1,11 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests\Unit\Domain\Article\UseCase\ListArticle;
 
 use LaravelDay\Article\UseCase\ListArticles\ListArticles;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ListArticlesTest extends TestCase
 {
@@ -13,8 +13,6 @@ class ListArticlesTest extends TestCase
      * A basic test example.
      *
      * @test
-     *
-     * @return void
      */
     public function shouldListArticle()
     {
@@ -22,10 +20,10 @@ class ListArticlesTest extends TestCase
 
         $expectedData = [
             [
-                'title'        => 'Articolo 1',
-                'body'         => 'Questo è un articolo',
+                'title' => 'Articolo 1',
+                'body' => 'Questo è un articolo',
                 'creationDate' => '2018-11-29 00:00:00',
-            ]
+            ],
         ];
 
         $data = $handler();
