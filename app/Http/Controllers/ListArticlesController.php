@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
-use LaravelDay\Article\UseCase\ListArticles\ListArticles;
+use LaravelDay\Article\ValueObject\Exception\UseCase\ListArticles\ListArticles;
 
 class ListArticlesController extends Controller
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Unit\Domain\Article\UseCase\ListArticle;
+namespace Tests\Unit\Domain\Article\UseCase\ListArticles;
 
 use LaravelDay\Article\UseCase\ListArticles\ListArticles;
 use Tests\TestCase;
